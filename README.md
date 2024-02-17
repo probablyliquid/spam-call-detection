@@ -5,6 +5,12 @@ Simple 3 layered neural network trained on a custom synthethic dataset.
 > Important Disclaimer: The `spam_calls.csv` dataset available in this repository is a synthetic dataset created for illustrative purposes. All the information within, including phone numbers, country codes, and other data, is randomly generated and holds no real-world significance or correlation. It is crucial to understand that this dataset is entirely fictional, and any attempts to misuse, abuse, or misrepresent the data are strongly discouraged. Please exercise ethical and responsible use of the provided data.
 > 
 ## Instructions:
+
+### Flask Applcation (Recommended)
+1. Make sure you have Flask installed: `pip install flask`.
+2. Run `python3 app.py`
+3. Open your web browser and navigate to `http://127.0.0.1:5000/` or `http://localhost:5000/`
+
 #### Local Runtime using Python3
 1. Clone/download the files.
 2. Make sure you have Python3 and the following dependencies installed: `tensorflow`, `keras`, `pandas`, and `numpy`.
