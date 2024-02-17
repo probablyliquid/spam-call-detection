@@ -6,7 +6,7 @@ Simple 3 layered neural network trained on a custom synthethic dataset.
 > 
 ## Instructions:
 
-### Flask Applcation (Recommended)
+### Flask Application (Recommended)
 1. Make sure you have Flask installed: `pip install flask`.
 2. Run `python3 app.py`
 3. Open your web browser and navigate to `http://127.0.0.1:5000/` or `http://localhost:5000/`
