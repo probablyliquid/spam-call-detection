@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spam Call Detector</title>
+  </head>
+  <body>
+    <h1>Spam Call Detector</h1>
+    <form action="/predict" method="post">
+      <label for="country_code">Country Code &lpar;+&rpar;</label>
+      <input type="text" name="country_code" required />
+      <br />
+      <label for="spam_reports">Number of Spam Reports:</label>
+      <input type="text" name="spam_reports" required />
+      <br />
+      <label for="saved_number"
+        >Is this a Saved Number (0 for No or 1 for Yes):</label
+      >
+      <input type="text" name="saved_number" required />
+      <br />
+      <input type="submit" value="Predict" />
+    </form>
+
+    {% if prediction is defined %}
+    <p>Prediction: {{ prediction }}</p>
+    <p>Confidence: {{ confidence * 100 }}%</p>
+    {% endif %}
+
+    <p>Created with ❤️ by Priyanshu</p>
+  </body>
+</html>

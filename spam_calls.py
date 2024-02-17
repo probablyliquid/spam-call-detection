@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 
 # Dataset
-dataset = pd.read_csv("/content/spam_calls.csv")
+dataset = pd.read_csv("spam_calls.csv")
 dataset.head()
 
 # Data Cleanup
@@ -68,3 +68,6 @@ decisionMaker(confidence)
 
 # Model Prediction / Confidence
 print(f"Probability of being spam: {confidence[0][0] * 100}%")
+
+# Save the trained model to an HDF5 file
+model.save("spam_detector.h5")
