@@ -15,6 +15,10 @@ Simple 3 layered neural network trained on a custom synthethic dataset.
 2. Run `python3 app.py`
 3. Open your web browser and navigate to `http://127.0.0.1:5000/` or `http://localhost:5000/`
 
+### Website
+1. Visit ![https://tamarind.onrender.com](https://tamarind.onrender.com/)
+   > Please note that this is not an optimal or recommmended way to use this service as it is incredibly slow and unstable.
+
 #### Local Runtime using Python3
 1. Clone/download the files.
 2. Make sure you have Python3 and the following dependencies installed: `tensorflow`, `keras`, `pandas`, and `numpy`.
