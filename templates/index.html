@@ -6,15 +6,29 @@
       type="text/css"
       href="{{ url_for('static', filename='style.css') }}"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=gambarino@400&f[]=jet-brains-mono@1,2&display=swap"
+      rel="stylesheet"
+    />
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Spam Call Detector</title>
+    <title>Tamarind</title>
   </head>
   <body>
-    <h1>Spam Call Detector</h1>
+    <div id="header">
+      <h1>Tamarind</h1>
+      <h3>Spam Call Detector</h3>
+    </div>
     <form action="/predict" method="post">
-      <label for="country_code">Country Code &lpar;+&rpar;</label>
+      <label for="country_code">Country Code &lpar;+&rpar;:</label>
       <input type="text" name="country_code" required />
       <br />
       <label for="spam_reports">Number of Spam Reports:</label>
@@ -28,11 +42,18 @@
       <input type="submit" value="Predict" />
     </form>
 
-    {% if prediction is defined %}
-    <p>Prediction: {{ prediction }}</p>
-    <p>Confidence: {{ confidence * 100 }}%</p>
-    {% endif %}
+    <div id="prediction">
+      {% if prediction is defined %}
+      <p>Prediction: {{ prediction }}</p>
+      <p id="probability">Spam Probability: {{ confidence * 100 }}%</p>
+      {% endif %}
+    </div>
 
-    <p>Created with ❤️ by Priyanshu</p>
+    <div id="footer">
+      <p id="created_label">Created with ❤️ by Priyanshu</p>
+      <p id="disclaimer">
+        Disclaimer: this model is trained on a synthetic dataset.
+      </p>
+    </div>
   </body>
 </html>
