@@ -40,7 +40,6 @@ input[type="submit"]:hover {
 }
 
 #prediction {
-  /* border: 2px solid #0e100e; */
   padding: 10px 20px;
   width: 300px;
   border-radius: 8px;
