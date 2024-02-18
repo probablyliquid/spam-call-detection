@@ -3,7 +3,11 @@ Simple 3 layered neural network trained on a custom synthethic dataset.
 - The solution provided has an average training accuracy of 86.67%
 - The dataset provided is synthetic and does not represent real data.
 > Important Disclaimer: The `spam_calls.csv` dataset available in this repository is a synthetic dataset created for illustrative purposes. All the information within, including phone numbers, country codes, and other data, is randomly generated and holds no real-world significance or correlation. It is crucial to understand that this dataset is entirely fictional, and any attempts to misuse, abuse, or misrepresent the data are strongly discouraged. Please exercise ethical and responsible use of the provided data.
-> 
+
+### Screenshot:
+![screenshot (8)](https://github.com/probablyliquid/spam-call-detection/assets/111677910/95430375-9bb4-43f2-a92d-d92a64c1510c)
+
+
 ## Instructions:
 
 ### Flask Application (Recommended)
