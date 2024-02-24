@@ -15,16 +15,16 @@ Simple 3 layered neural network trained on a custom synthethic dataset.
 2. Run `python3 app.py`
 3. Open your web browser and navigate to `http://127.0.0.1:5000/` or `http://localhost:5000/`
 
-### Website
-1. Visit ![https://tamarind.onrender.com](https://tamarind.onrender.com/)
-   > Please note that this is not an optimal or recommmended way to use this service as it is incredibly slow and unstable.
-
-#### Local Runtime using Python3
+### Local Runtime using Python3
 1. Clone/download the files.
 2. Make sure you have Python3 and the following dependencies installed: `tensorflow`, `keras`, `pandas`, and `numpy`.
 4. Run `spam_calls.py` using CLI command `python3 spam_calls.py`
 
-#### Jupyter Notebook (or) Google Colab
+### Website
+1. Visit ![https://tamarind.onrender.com](https://tamarind.onrender.com/)
+   > Please note that this is not an optimal or recommmended way to use this service as it is incredibly slow and unstable.
+
+### Jupyter Notebook (or) Google Colab
 1. Initialise Jupyter Notebook (or) Google Colab (for Colab, you need to connect to a runtime server)
 2. Make sure that your runtime server has Python3 and the following dependencies installed: `tensorflow`, `pandas`, `numpy,`, and `keras`.
 3. Upload all the files provided (you may skip the main.py file)
